@@ -9,37 +9,22 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
-.btn-sign-up {
-  display: inline-block;
-  min-width: 118px;
-  padding: 0 16px;
-  line-height: 50px;
-  color: #fff;
-  text-align: center;
-  /* font-family: Poppins; */
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 600;
-  /* line-height: 28px; 175% */
-  border-radius: 24.5px;
-  background: #171100;
-}
-/* =============header============= */
+/* =============header============== */
 .header {
   background: #fffcf4;
 }
 .header.fixed {
   position: sticky;
   top: -28px;
-}
-a {
-  text-decoration: none;
 }
 .header .body-header {
   display: flex;
@@ -48,46 +33,51 @@ a {
 }
 .nav {
   margin-left: auto;
-  position: relative;
 }
 .nav ul {
   display: flex;
 }
 .nav a {
+  position: relative;
   color: #5f5b53;
-  /* text-align: center; */
-  /* font-family: Poppins; */
   font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 175% */
   padding: 8px 21px;
 }
-.nav li.active a,
-.nav a:hover {
+.nav a:hover,
+.nav li.active a {
   color: #171100;
-  /* text-align: center; */
-  /* font-family: Poppins; */
-  /* font-size: 16px; */
-  /* font-style: normal; */
+  font-size: 1.6rem;
   /* font-weight: 600; */
-  /* line-height: 28px; 175% */
   text-shadow: 0px 0px 0px currentColor;
 }
 .nav li.active a::after {
   position: absolute;
   left: 21px;
-  bottom: 4px;
+  bottom: 6px;
   display: block;
   content: "";
   width: 12px;
   height: 2px;
-  /* flex-shrink: 0; */
-  border-radius: 1.24px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  background: #171100;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 49px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.6rem;
+
+  font-weight: 600;
+  border-radius: 24.5px;
   background: #171100;
 }
 .header .btn-sign-up {
-  min-width: 114px;
+  min-width: 144px;
 }
 .header .action {
   margin-left: 49px;
